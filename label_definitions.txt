@@ -5,6 +5,57 @@
 #
 # Delete the examples below and put yours in.
 
-analysis: makes an argument backed by a specific, checkable fact
-hot_take: a confident claim with no support offered
-reaction: an immediate response to something that just happened
+humorous: Mainly intended as a joke, meme, or sarcastic remark about J. Cole or related topics. 
+Use when the joke is the main point; a casual joke attached to a serious request does not 
+automatically make it humorous.
+1. "J Cole seen sitting down and drinking a can at his Dallas concert. How does this effect your love for this “humble rapper”"
+
+2. "I met J Cole, my life is now inspired by humbleness.
+
+I walked into the KFC, to see J Cole sharing his food with everyone. He didn't even eat it himself. When I asked 
+him why he said "eating food isn't humble enough for me." I pulled out my phone and asked if we could take a 
+picture. J Cole gave me a puzzled look and tapped my phone screen, "What is this thing you hold in your hand?" 
+"This is a phone, are you stupid?" I said to J Cole, He tilted his head "I am too humble to know what a phone is." 
+He then climbs up the roof of KFC and pulls out his blanket, Cole lays down and attempts to fall asleep. "Don't 
+you have to go home, Cole?" I ask before he looks at me confused, "What's a home? Sounds a bit snobby and 
+materialistic to me! My blanket and my moldy KFC roof is all I need!""
+
+
+concert_question: Asks for practical information about attending a J. Cole concert, such as tickets, venues, 
+schedules, seating, or entry rules.Includes requests for advice about attendance decisions. 
+Excludes rhetorical questions that mainly express praise or frustration.
+
+1. " Are the tour towels for everyone attending the tour in Europe too?
+After seeing posts about the white towels handed out at the US concerts, I was wondering if these are 
+just for VIP tickets or for everyone and if these are also handed out at European concerts?"
+
+2. " Timing J. Cole Antwerp
+I'm planning to arrive around 7:30, an hour after the doors opened and half an hour before the opening/
+dreamville radio/... What standing places can I expect? At the moment I'm hoping I'll still have a good 
+spot in the middle of the crowd, no too far to the back but also not very far in the front of course."
+
+opinion: Expresses a personal judgment about an artist, song, album, performance, or ranking. 
+
+1. "Finally understood this song ...
+J. Cole has been my favorite artist for a couple years now, but I never really understood Love Yourz which is one of 
+his most praised songs. I obviously knew what it was saying but only when I was thinking late at night about why we're 
+even here, about what my actions actually achieve, did I really see what he was saying.
+
+Its about understanding that life is about living, not just about grinding and thinking about how to reach that next level. 
+If you don't appreciate the beautiful things that life has to offer, then you get caught up in all of the harsh realities 
+instead. What an amazing song."
+
+2. "Bronx Zoo Freestyle was his best this year
+The aggresion after the build up was something I really wished on The fall off.
+
+He's been so technical this decade that hearing him keeping it while sounding so hungry. 
+It's prolly among his top 3 verse ever for me along with Jermaine's interlude and a plate of collard greens"
+
+
+news_update: Primarily shares or seeks verification of concrete updates about J. Cole, 
+including releases, tours, collaborations, or appearances.
+1. "Kyle Kuzma from the lakers rocking a new J. Cole x Puma collab shoe thats currently unreleased.
+"
+
+2. "Dreamville Fest Lineup Change: Chris Brown replaced with 50 Cent
+"
