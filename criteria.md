@@ -52,24 +52,22 @@ whether you hit them:
 ---
 
 ## 1.
-
-<!-- Your criterion. It must name a number. -->
+The model's accuracy is at least 80% overall.
 
 
 
 **Why this target:**
+I want no more than about one in five predictions to be wrong, anything lower than 80% would would be an unsuccessfully trained model.
 
 
 
 ---
 
 ## 2.
-
-<!-- Your criterion. -->
-
-
+The F1 score for humorous posts in the held out set is at least 0.6, and the F1 score for the rest of the categories are 0.8 or higher for the held out set. 
 
 **Why this target:**
+Posts in the category of humorous that don't include a picture or that can still be identified as humoruous without a picture are rare on Reddit, so it will be tougher for the model to accurately classify them. The rest of the post categories, however, are more common, so they should have more training examples and clearer textual signals.
 
 
 
@@ -77,11 +75,12 @@ whether you hit them:
 
 ## 3.
 
-<!-- Your criterion. -->
+The largest category in the dataset may not be more than 70% of the dataset. 
 
 
 
 **Why this target:**
+I chose for the threshold for the most common classification of the data to 70% because any higher would risk preventing the model from successfully predicting other classifications. It also abides with the assignment's recommended maximum.
 
 
 
@@ -89,24 +88,21 @@ whether you hit them:
 
 ## 4.
 
-<!-- Your criterion. -->
-
-
+On a sample of 10 posts, another person and I will independently assign labels using the same definitions and agree on at least 7 of the posts before discussing disagreements.
 
 **Why this target:**
+I'd accept disagreement on three out of every ten posts because some boundaries like opinion and humor or concert question and opinion can be obscure, but they shouldn't appear more than 3 times in a set of 10 since they aren't common.
+
 
 
 
 ---
 
 ## 5.
-
-<!-- Your criterion. -->
-
-
+On a set of 10 held-out boundary posts between concert_question and opinion, the model will correctly classify at least 7.
 
 **Why this target:**
-
+I know there's already some difficulty having another model properly classify these myself, and I chose 7 out of 10 because it the goal is for the model to handle the most difficult cases more than half of the time.
 
 
 ---
