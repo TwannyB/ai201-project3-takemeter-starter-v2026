@@ -41,7 +41,7 @@
 
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
-
+The community I chose to select posts from is the J.Cole subreddit community. The classifier sorts the posts into the categories: humorous, concert_question, news_update, and opinion. I chose the four categories because I felt as though most of the posts that I viewed could be sorted into those four categories.
 
 
 ---
@@ -54,33 +54,74 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `humorous`
 
 **Definition:**
+Mainly intended as a joke, meme, or sarcastic remark about J. Cole or related topics. 
+Use when the joke is the main point; a casual joke attached to a serious request does not 
+automatically make it humorous.
 
 **Example 1:**
->
+>"J Cole seen sitting down and drinking a can at his Dallas concert. How does this effect your love for this “humble rapper"
 
 **Example 2:**
->
+>"I met J Cole, my life is now inspired by humbleness.
 
-### `label_two`
+I walked into the KFC, to see J Cole sharing his food with everyone. He didn't even eat it himself. When I asked 
+him why he said "eating food isn't humble enough for me." I pulled out my phone and asked if we could take a 
+picture. J Cole gave me a puzzled look and tapped my phone screen, "What is this thing you hold in your hand?" 
+"This is a phone, are you stupid?" I said to J Cole, He tilted his head "I am too humble to know what a phone is." 
+He then climbs up the roof of KFC and pulls out his blanket, Cole lays down and attempts to fall asleep. "Don't 
+you have to go home, Cole?" I ask before he looks at me confused, "What's a home? Sounds a bit snobby and 
+materialistic to me! My blanket and my moldy KFC roof is all I need!""
+
+### `concert_question`
 
 **Definition:**
+Asks for practical information about attending a J. Cole concert, such as tickets, venues, 
+schedules, seating, or entry rules.Includes requests for advice about attendance decisions. 
+Excludes rhetorical questions that mainly express praise or frustration.
 
 **Example 1:**
->
+>" Are the tour towels for everyone attending the tour in Europe too?
+After seeing posts about the white towels handed out at the US concerts, I was wondering if these are 
+just for VIP tickets or for everyone and if these are also handed out at European concerts?"
 
 **Example 2:**
->
+>"Timing J. Cole Antwerp
+I'm planning to arrive around 7:30, an hour after the doors opened and half an hour before the opening/
+dreamville radio/... What standing places can I expect? At the moment I'm hoping I'll still have a good 
+spot in the middle of the crowd, no too far to the back but also not very far in the front of course."
+
+### `opinion`
+
+**Definition:**
+Expresses a personal judgment about an artist, song, album, performance, or ranking. 
+
+**Example 1:**
+>"Finally understood this song ... J. Cole has been my favorite artist for a couple years now, but I never really understood Love Yourz which is one of his most praised songs. I obviously knew what it was saying but only when I was thinking late at night about why we're even here, about what my actions actually achieve, did I really see what he was saying.Its about understanding that life is about living, not just about grinding and thinking about how to reach that next level. If you don't appreciate the beautiful things that life has to offer, then you get caught up in all of the harsh realities instead. What an amazing song."
+
+**Example 2:**
+>"Bronx Zoo Freestyle was his best this year The aggression after the build up was something I really wished on The fall off. He's been so technical this decade that hearing him keeping it while sounding so hungry. It's prolly among his top 3 verse ever for me along with Jermaine's interlude and a plate of collard greens"
+
+### `news_update`
+
+**Definition:**
+Primarily shares or seeks verification of concrete updates about J. Cole, 
+including releases, tours, collaborations, or appearances.
+**Example 1:**
+>"Kyle Kuzma from the lakers rocking a new J. Cole x Puma collab shoe thats currently unreleased."
+
+**Example 2:**
+>"Dreamville Fest Lineup Change: Chris Brown replaced with 50 Cent"
+
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** humorous and opinion
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
+Choose humorous when the main purpose is a joke or exaggerated mock judgment; choose opinion when the main purpose is a sincere evaluation. If the text alone doesn’t establish the difference, exclude it.
 
 
 
@@ -91,19 +132,19 @@
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** The r/Jcole subreddit on Reddit.com
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** I labelled each one manually except for ones I was unsure on, when I used AI to help me classify. I then had AI verify my selections for the ones I classified cold.
+
 
 **Counts per label:**
 
 | Label | Count | Share |
-|---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+|humorous|28|14%|
+|concert_question|49|24.5%|
+|opinion|91|45.5%|
+|news_update|32|16%|
+| **Total** |200| 100% |
 
 **Three hard cases**
 
@@ -112,41 +153,51 @@ Say so plainly — the disclosure is required, not penalised. -->
 
 **1.**
 > *The post:*
->
-> *Could have been:*
->
-> *I chose, because:*
+>J.Cole concert Eu I have been thinking of going to four other countries Hamburg,Denmark,Sweden and Norway to see J.cole again after seeing him in Switzerland.he was amazing and I became a super fan right after and it’s allegedly his last tour and i am really thinking of seeing him again…well i get to see other european countries too but the concert is like the anchor lol.. What do you all think ? is that dumb ? I know he’s going to perform the same set list but it’s J.cole Helppppp
+> *Could have been:* 
+>opinion or concert_question
+> *I chose, because:* concert_question because it seeks advice about traveling to attend more concerts, while also praising the performance. The writer would more likely want a response to their question over a response to their opinion.
 
 **2.**
-> *The post:*
->
-> *Could have been:*
->
-> *I chose, because:*
+> *The post:* 
+>Jcole makes newspapers for people that listen to music
+
+> *Could have been:* 
+> humorous or opinion
+
+> *I chose, because:* Humorous, because the metaphor of newspapers is a joke about the "old school" reputation his fans are given.
 
 **3.**
 > *The post:*
->
-> *Could have been:*
->
-> *I chose, because:*
+>The Dreamers I’ve been seeing some news online about Dreamville kinda falling apart with jid and ari Lennox but id say ari isn’t that big of a loss her background vocals will definitely be missed especially on 4yeo and 2014 FHD they were essential but I feel like jid should be the focus on keeping because he’s so fucking good I don’t think anybody here regularly listens to ari Lennox but everybody here listens to JID for sure I wish cole would LET HIM RELEASE THE METRO TAPE if he’s the one stopping it since I think that’s the main reason he’s tryna leave also guys why’s j cole stopping dreamville fests?
 
+> *Could have been:*
+>opinion or news_update
+> *I chose, because:*
+Opinion, because although a few Dreamville members and Dreamville's their relationships are mentioned, the author is mainly evaluating artists and expressing their wishes.
 ---
 
 ## The Training Run
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** "distilbert-base-uncased"
 
 **Settings:** <!-- epochs, learning rate, batch size, seed -->
+EPOCHS = 3
+LEARNING_RATE = 2e-5
+BATCH_SIZE = 16
 
 **Anything I changed from the defaults, and why:**
+I didn't make any changes.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
+**Split sizes:** 
+<!-- train / val / test, and per-label counts in the test
 split. If a label had fewer than about 8 in test, say so — it explains a lot
 of next unit's variance. -->
 
+train:139  ·  val:31  ·  test:30
+humorous, concert_question, and news_update all had fewer than 8 examples in the test split.
 
 
 ---
@@ -162,17 +213,18 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I asked ChatGPT to help me better define my labels by giving it my current definitions.
+- *What came back:* It gave me back improved definitions that made it easier to classify posts in the future.
+- *What I changed:* I kept its adjustments, but looked over example posts that were close to boundaries and examined them according to the new definitions to make sure the definitions hold up.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I asked ChatGPT to help me classify obscure posts.
+- *What came back:* ChatGPT recommended categories and gave reasoning. 
+- *What I changed:* I reviewed the classifications and checked them by the definitions we created before implementing them into labels.csv.
 
 **Pre-labelling disclosure:**
+No batch was pre-labelled by a model. 13 of 200 posts, the ambiguous ones, were labelled with ChatGPT's help (see Moment 2): it suggested a category and its reasoning, and I checked each one against my label definitions before writing the final label. Those rows are marked AI-assisted label review, checked in the note column. The 20 cold examples were labelled with no AI help.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
