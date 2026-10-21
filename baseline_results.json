@@ -1,0 +1,190 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.5333333333333333,
+    "f1_macro": 0.35416666666666663,
+    "per_label": {
+      "concert_question": {
+        "precision": 1.0,
+        "recall": 0.14285714285714285,
+        "f1": 0.25,
+        "support": 7
+      },
+      "humorous": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 4
+      },
+      "news_update": {
+        "precision": 0.42857142857142855,
+        "recall": 0.6,
+        "f1": 0.5,
+        "support": 5
+      },
+      "opinion": {
+        "precision": 0.5454545454545454,
+        "recall": 0.8571428571428571,
+        "f1": 0.6666666666666665,
+        "support": 14
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "damn bro safety sad as hell i feel like shedding a tear, out of sympathy, cuz filthee died pretty recently, (2023) by getting shot in fayetteville. He was one of 2 members of the group bomm sheltuh, which cole used to look up to, they even gave him his second rap name \u201ctherapist\u201d. Just the overall message of the song is sad ",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Entry hour At what hour do yall recommend going to get a decent place in the regular standing for Antwerp. Its my first concert alone and I dont wanna get a bad place for being late. ",
+      "gold": "concert_question",
+      "predicted": "opinion"
+    },
+    {
+      "text": "J Cole and Danny Brown collab? How would yall feel about this? I doubt it'll ever happen, but I would personally love it. Cole has always been someone who put a lot of artistic expression into his music but he's definitely a lot more Mainstream then Danny Brown who is basically an explosing of artistic expression. I think Cole always snaps on features espectially with more underground and artistic rappers/artists like Danny.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Just discovered jcole, any recommendations? My friend introduced me to jcole through his song 'Grippy'. I really liked the sound of that and was hoping to find more songs like that in Jcole's discography, any suggestions?",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Thoughts on KOD? So I left the Cole show, and decided run though his entire discography start to finish, ending with TFO. Then got to KOD. Now mind you, when KOD dropped, yeah of course I enjoyed it. It\u2019s Cole. But I remember thinking this album is his personal worst. The peak being 2014, then 4YEO: loved it, but felt it didn\u2019t top the album before. But yet some of my favorite songs are on there (self titled). When KOD released, I felt disappointed. While I felt like it wasn\u2019t a bad record at all, it wasn\u2019t as good as 4YEO. And hell no, not in the same lane as 2014. Now, maybe it\u2019s because I don\u2019t listen to hip hop much anymore, I felt like KOD aged well. Especially the concept. Kids born in the system, either the streets or a rapper or ball player. The kids choosing the streets. Drugs become fun to a way to escape and eventually to downfall. KOD is aging like fine wine to me.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Which J. Cole Album Is His Best One? Part 7: Third Place Before Going To The Best Cole Album Its Time To Choosing The Third Place Between Born Sinner & KOD Last Round Winner: 2014 Forest Hills Drive To Vote You Need Upvote The OP Comment With Your Option",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Dead presidents Dead presidents I or II, love both of them personally probably like II more",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "This sub only listens to one type of music and it's pretty obvious when Cole hops on a different type of track I knew y'all weren't gonna like the new track with BIA lmfao: https://www.reddit.com/r/Jcole/comments/ty11lw/comment/i3pf9wv/?utm\\_source=share&utm\\_medium=web2x&context=3 She's a dope artist and if you chill with a lot of spanish people you know this song goes crazy. Ya'll need to expand your horizons music wise because not every song needs to be super deep.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Jermaine really fell off \ud83d\ude2d Bro rocking the newest iPhone smh man ain't humble no longer. /s in case anyone missed the flair",
+      "gold": "humorous",
+      "predicted": "opinion"
+    },
+    {
+      "text": "The fall off setlist repeats I\u2019m glad J.cole repeats setlist if he has two nights in one city I am sad that I didn\u2019t get to hear some of the songs I wanted like 4your eyes only or only you. Do yall like that he repeats or would to prefer that he does a new set every night?",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "And mf I AM! A lil memey-meme for my favorite sub",
+      "gold": "humorous",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Cole tippin $400 at local waffle house, my humble King \ud83d\ude02",
+      "gold": "humorous",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Anyone planning on going to his show in Stockholm? Going solo and thought it could be nice to see if someone else is doing the same",
+      "gold": "concert_question",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Merch on day of show. Quick question; I keep seeing early access for merch; but I don't have IG. And, when I go to the site; it appears that I need a code to get into the site. Does anyone have any deets on how that works? And, is there actual merch being sold on show day?",
+      "gold": "concert_question",
+      "predicted": "opinion"
+    },
+    {
+      "text": "With Kanye on the news once again, I personally think that J Cole really hit the mark with \u2018False Prophets\u2019",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "4 your eyez only Is it just me or do you guys also think that \"4 your eyez only\" is the most underrated song on the album?",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "And the Whole World Is The Ville I have a feeling J. Cole was waiting until the Fayetteville show to perform And The Whole World Is The Ville. It would only make sense for him to do it there yk? Either that or he performs the album front to back like he did with forest hills.",
+      "gold": "concert_question",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I have a question In all seriousness, what happened to JCole playing in the NBA? From what i remember he only played three games and then never showed his fave again. So what happened?",
+      "gold": "news_update",
+      "predicted": "news_update"
+    },
+    {
+      "text": "Dreamville Fest Lineup Change: Chris Brown replaced with 50 Cent",
+      "gold": "news_update",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Safety hits me so hard man I know a lot of people here can probably relate to getting a text message, looking down at your phone and it's from someone you were close to bringing bad news. As I get older I see those moments get closer and closer to each other. And at some point you kinda start expecting it, or have an off feeling all day long and then you're just hit with a text that you know will just affect you mentally for a long ass while. Cole wraps this feeling up in such a melancholy, somber way. And there's a slight charm of this moment being from your hometown while you're far away, it's such a specific message. I always loved this man's music, he's really good at delivering little specific feelings like this and it just hits you sometimes whether or not you relate to them.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "J Cole, enjoying the day, casually riding his bike on a Saturday morning in NYC",
+      "gold": "news_update",
+      "predicted": "opinion"
+    },
+    {
+      "text": "New music\u2026. With Dreamville fest slowly approaching, do we still think Cole will drop some new music as he mentioned at the FHD anniversary concert? My hope for a new project dropping before then is starting to dwindle. Hopefully I\u2019m wrong. What do yall think?",
+      "gold": "news_update",
+      "predicted": "news_update"
+    },
+    {
+      "text": "J Cole seen sitting down and drinking a can at his Dallas concert. How does this effect your love for this \u201chumble rapper\u201d",
+      "gold": "humorous",
+      "predicted": "news_update"
+    },
+    {
+      "text": "Anyone going to the Cole concert by themselves ? I want to know who else will be experiencing this concert alone just like me \ud83e\udd73",
+      "gold": "concert_question",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I was listening to 2014 Forest Hills Drive and suddenly I found myself able to visualize a chessboard in my head in perfect detail. I felt like a grandmaster and immediately started calculating lines in the queen's gambit accepted variation. Eventually it wore off, but i was left with a greater understanding of the game. Has J Cole's music helped anyone increase their mental capacity or am I alone here?",
+      "gold": "opinion",
+      "predicted": "news_update"
+    },
+    {
+      "text": "Here we go! New Cole news?",
+      "gold": "news_update",
+      "predicted": "news_update"
+    },
+    {
+      "text": "Does Cole have an online merch store I want to get merch before the show because I don\u2019t want to get there and the thing I want is sold out",
+      "gold": "concert_question",
+      "predicted": "news_update"
+    },
+    {
+      "text": "Is another announcement or something coming today??? I hope something comes like an interview or even just a post from j cole just something",
+      "gold": "opinion",
+      "predicted": "news_update"
+    },
+    {
+      "text": "What is the age demographics at The Fall Off Concert - mid 30s i'm in my mid 30s been rocking with J Cole for years and years but never had the chance to go to a concert. Saw the setlist and I want to go see him but worried I would be aged out.",
+      "gold": "concert_question",
+      "predicted": "concert_question"
+    },
+    {
+      "text": "Can I be honest about the new album? I think it was a good piece from J Cole, but I didn't enjoy it the way I thought. And yes, I listened to it more than once, but some songs STILL didn't hit for me. Maybe I was just expecting something different?I hate that people get attacked online for not giving an album a perfect 10. I gave it a 7/10, but that probably would make me a 'hater' lol. Im happy for cole and hope to see more well out criticism in the future. Otherwise, it was hard for me to get into it. Anyone else get it?",
+      "gold": "opinion",
+      "predicted": "opinion"
+    }
+  ]
+}

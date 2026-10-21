@@ -240,10 +240,12 @@ No batch was pre-labelled by a model. 13 of 200 posts, the ambiguous ones, were 
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.533 | 0.467 | -0.067 |
+| Macro F1 | 0.354 | 0.159 | -0.195 |
+| F1 — `concert_question` | 0.250 | 0.000 | -0.250 |
+| F1 — `humorous` | 0.000 | 0.000 | +0.000 |
+| F1 — `news_update` | 0.500 | 0.000 | -0.500 |
+| F1 — `opinion` | 0.667 | 0.636 | -0.030 |
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
