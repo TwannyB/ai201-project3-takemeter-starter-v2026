@@ -248,14 +248,11 @@ No batch was pre-labelled by a model. 13 of 200 posts, the ambiguous ones, were 
 | F1 — `opinion` | 0.667 | 0.636 | -0.030 |
 
 **What I predicted before I looked:**
-<!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
-     prediction made afterwards isn't one. -->
+I think my trained model will have a better overall accuracy, and also better precision
+
 
 **What the gap actually means:**
-<!-- If the baseline matched your trained model, your fine-tuning added
-     nothing — and that is a real finding, not a failure. Say it plainly. -->
-
-
+My trained model performed worse, meaning that my fine tuning failed to improve, but worsened the performance of the model.
 
 ---
 
@@ -277,16 +274,22 @@ No batch was pre-labelled by a model. 13 of 200 posts, the ambiguous ones, were 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
-|---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| true \ predicted | opinion | humorous | concert_question | news_update |
+|---|---|---|---|---|
+| **opinion** | 14 | 0 | 0 | 0 |
+| **humorous** | 4 | 0 | 0 | 0 |
+| **concert_question** | 7 | 0 | 0 | 0 |
+| **news_update** | 5 | 0 | 0 | 0 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
+
+The model confused 7 real `concert_question` posts as opinion and 0 were confused the other way around.
+This could mean that my training data was inconsistently labelled in some way, but the model can correctly recognize
+`opinion` posts as opinion. 
+
 
 
 
