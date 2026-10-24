@@ -1,0 +1,98 @@
+[
+  {
+    "seed": 42,
+    "correct": 4,
+    "n": 10,
+    "confusion": {
+      "opinion": {
+        "opinion": 4,
+        "humorous": 0,
+        "concert_question": 0,
+        "news_update": 0
+      },
+      "humorous": {
+        "opinion": 0,
+        "humorous": 0,
+        "concert_question": 0,
+        "news_update": 0
+      },
+      "concert_question": {
+        "opinion": 6,
+        "humorous": 0,
+        "concert_question": 0,
+        "news_update": 0
+      },
+      "news_update": {
+        "opinion": 0,
+        "humorous": 0,
+        "concert_question": 0,
+        "news_update": 0
+      }
+    },
+    "device": "cpu"
+  },
+  {
+    "seed": 7,
+    "correct": 3,
+    "n": 10,
+    "confusion": {
+      "opinion": {
+        "opinion": 3,
+        "humorous": 0,
+        "concert_question": 1,
+        "news_update": 0
+      },
+      "humorous": {
+        "opinion": 0,
+        "humorous": 0,
+        "concert_question": 0,
+        "news_update": 0
+      },
+      "concert_question": {
+        "opinion": 6,
+        "humorous": 0,
+        "concert_question": 0,
+        "news_update": 0
+      },
+      "news_update": {
+        "opinion": 0,
+        "humorous": 0,
+        "concert_question": 0,
+        "news_update": 0
+      }
+    },
+    "device": "cpu"
+  },
+  {
+    "seed": 2024,
+    "correct": 3,
+    "n": 10,
+    "confusion": {
+      "opinion": {
+        "opinion": 3,
+        "humorous": 0,
+        "concert_question": 1,
+        "news_update": 0
+      },
+      "humorous": {
+        "opinion": 0,
+        "humorous": 0,
+        "concert_question": 0,
+        "news_update": 0
+      },
+      "concert_question": {
+        "opinion": 6,
+        "humorous": 0,
+        "concert_question": 0,
+        "news_update": 0
+      },
+      "news_update": {
+        "opinion": 0,
+        "humorous": 0,
+        "concert_question": 0,
+        "news_update": 0
+      }
+    },
+    "device": "cpu"
+  }
+]

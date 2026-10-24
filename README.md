@@ -263,11 +263,11 @@ My trained model performed worse, meaning that my fine tuning failed to improve,
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | ≥0.80 | 0.46 | 0.46 | 0.43 | MISSED |
+| 2. F1 score for humorous and others| ≥0.60(humorous), ≥0.80(others) | 0.63(opinion), 0(humorous), 0(concert_q), 0(news) | 0.63(opinion), 0(humorous), 0(concert_q), 0(news) | 0.60(opinion), 0(humorous), 0(concert_q), 0(news) | MISSED |
+| 3. Largest category not too big| 0.70<= | 0.46 | 0.46 | 0.46 | MET |
+| 4. Sample of 10, classifications agree with another person | 7 | 8 | 8 | 9 | MET |
+| 5. Boundary between concert_question and opinion, correct classifications out of 10 | 7 | 4 | 3 | 3 | MISSED |
 
 ### Confusion matrix
 
@@ -302,11 +302,11 @@ This could mean that my training data was inconsistently labelled in some way, b
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 |Overall accuracy | ≥0.80 | MISSED |  |
+| 2 |F1 score for humorous and others| ≥0.60(humorous), ≥0.80(others) | MISSED |  |
+| 3 |Largest category not too big| 0.70<= | MET |  |
+| 4 |Sample of 10, classifications agree with another person | 7 | MET |  |
+| 5 |Boundary between concert_question and opinion, correct classifications out of 10 | 7 | MISSED |  |
 
 **Diagnoses**
 
@@ -360,7 +360,7 @@ This could mean that my training data was inconsistently labelled in some way, b
 >The staff said `analysis`, I said `hot_take`.
 > *My call, and why:*
 >I agree with the staff's post and think I applied the rule loosely although it covered it, because I wasn't sure if the last sentence in the post was a clear conclusion to come to or an opinion. Looking back, I understand that top 10 means it's easier for a B team to score if it has more people, so the scoring supports the conclusion and the post isn't a hot take and the rule covered the post, so I was wrong.
-> *Which pile:* A
+> *Which pile:* a
 
 **2.**
 > *The post:*
