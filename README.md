@@ -331,7 +331,7 @@ This could mean that my training data was inconsistently labelled in some way, b
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** _23_ / 30 = _77_%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -355,24 +355,70 @@ This could mean that my training data was inconsistently labelled in some way, b
 
 **1.**
 > *The post:*
->
+>The club championship scoring changed in 2019 from top-6 to top-10. S…
 > *Staff said / I said:*
->
+>The staff said `analysis`, I said `hot_take`.
 > *My call, and why:*
->
-> *Which pile:*
+>I agree with the staff's post and think I applied the rule loosely although it covered it, because I wasn't sure if the last sentence in the post was a clear conclusion to come to or an opinion. Looking back, I understand that top 10 means it's easier for a B team to score if it has more people, so the scoring supports the conclusion and the post isn't a hot take and the rule covered the post, so I was wrong.
+> *Which pile:* A
 
 **2.**
 > *The post:*
->
+>Everyone blames the hill at 18 miles. I split the field into people w…
 > *Staff said / I said:*
->
+>Staff said `analysis`, I said `hot_take`.
 > *My call, and why:*
->
-> *Which pile:*
+>I agree with the staff's post because the writer supported their claim by comparing the slowdown of the two groups, which is analysis. I was confused by the last sentence's confident claim, which sounded like a controversial opinion since I didn't understand the reasoning. Whether I 
+understood the reasoning or not, the evidence was relevant to the conclusion, making it analysis, so I applied the rule loosely..
+> *Which pile:* a
+
+**3.**
+> *The post:*
+>Carbon plates aren't the whole story. My times dropped 2% in the shoe…
+> *Staff said / I said:*
+>Staff said `analysis`, I said `reaction`.
+> *My call, and why:*
+>I think I loosely applied the rule. The post mentioned the writer's personal experience, so I thought it was a reaction, but the facts being present outrank the experience, even if the post was about a recent occurence, so the staff's classification is better supported.
+> *Which pile:* a
+
+**4.**
+> *The post:*
+>Checked the entry lists. 41% of this year's field have never run the …
+> *Staff said / I said:*
+>Staff said `analysis`, I said `hot_take`
+> *My call, and why:* It was unclear whether the facts stated were relevant to the conclusion made, so I wasn't sure if the facts were load bearing, which would make it analysis according to the rules. However, I do think the staff was correct again because of fourth rule that states whatever the post spends more time on is the classification, which in this case is analysis. Therefore, I applied the rules loosely here.
+> *Which pile:* a
+
+**5.**
+> *The post:*
+>Ran the same loop in 4C and in 24C within a fortnight, same effort by…
+> *Staff said / I said:*
+>Staff said `analysis`, I said `reaction`
+> *My call, and why:*
+> I think I loosely applied the rules. I thought that because the post involved the writer's experience, it was a reaction to their change in time. However, the rule states that a post, even if about a recent experience is still analysis if it argues from a checkable fact, so the staff is correct here.
+> *Which pile:* a
+
+**6.**
+> *The post:*
+>Went back through the club results going back to 2012. Every single y…
+> *Staff said / I said:*
+>Staff said `analysis`, I said `hot_take`
+> *My call, and why:*
+>I loosely applied the rules. I believed that because the post had a last sentence that gave a conclusion about what was going on, it could have been a hot take. However, the facts given are relevant and "load bearing", so analysis is the classification the rule actually supports.
+> *Which pile:* a
+
+**7.**
+> *The post:*
+> Three of us ran the same session on the same day, different shoes, wi…
+> *Staff said / I said:*
+>Staff said `analysis`, I said `reaction`
+> *My call, and why:*
+>I think I again loosely applied the rules, mostly because I don't agree with the rules. By rule 3, the post is analysis despite the post possibly being about a recent event or a person's experience because it contains a checkable fact. I labeled it reaction because the writer's experience seemed more prominent in the post to me.
+> *Which pile:* a
+
 
 **What the pattern in my disagreements tells me:**
-
+I often mistook analysis posts for other post classes, mainly because I didn't apply rules well, but instead went with gut feelings and my own logic about what I thought was most important in the post.
 
 
 ---
