@@ -266,7 +266,7 @@ My trained model performed worse, meaning that my fine tuning failed to improve,
 | 1. Overall accuracy | ≥0.80 | 0.46 | 0.46 | 0.43 | MISSED |
 | 2. F1 score for humorous and others| ≥0.60(humorous), ≥0.80(others) | 0.63(opinion), 0(humorous), 0(concert_q), 0(news) | 0.63(opinion), 0(humorous), 0(concert_q), 0(news) | 0.60(opinion), 0(humorous), 0(concert_q), 0(news) | MISSED |
 | 3. Largest category not too big| 0.70<= | 0.46 | 0.46 | 0.46 | MET |
-| 4. Sample of 10, classifications agree with another person | 7 | 8 | 8 | 9 | MET |
+| 4. Sample of 10, classifications agree with another person | 7 | 8 | 8 | 8 | MET |
 | 5. Boundary between concert_question and opinion, correct classifications out of 10 | 7 | 4 | 3 | 3 | MISSED |
 
 ### Confusion matrix
@@ -302,11 +302,11 @@ This could mean that my training data was inconsistently labelled in some way, b
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |Overall accuracy | ≥0.80 | MISSED |  |
-| 2 |F1 score for humorous and others| ≥0.60(humorous), ≥0.80(others) | MISSED |  |
-| 3 |Largest category not too big| 0.70<= | MET |  |
-| 4 |Sample of 10, classifications agree with another person | 7 | MET |  |
-| 5 |Boundary between concert_question and opinion, correct classifications out of 10 | 7 | MISSED |  |
+| 1 |Overall accuracy | ≥0.80 | MISSED |All three seed accuracy values were below 0.8, so it's a miss.|
+| 2 |F1 score for humorous and others| ≥0.60(humorous), ≥0.80(others) | MISSED |Opinion F1 ranged from 0.6 to 0.63, and every other label scored 0 for all three seeds. |
+| 3 |Largest category not too big| 0.70<= | MET |The largest label, opinion, is 46% of thre dataset, which is 70%. It stays the same for every seed.|
+| 4 |Sample of 10, classifications agree with another person | 7 | MET | My housemate agreed on 8 of the sample posts with me, so that fulfills the target of at least 7. |
+| 5 |Boundary between concert_question and opinion, correct classifications out of 10 | 7 | MISSED | I scored the 10 post boundary set with each seed's model and got 4 / 3 / 3 out of 10, which results in boundary_results.json. Below 7 on every seed. |
 
 **Diagnoses**
 
@@ -318,6 +318,12 @@ This could mean that my training data was inconsistently labelled in some way, b
      ⚠️ Use your agreement report as evidence. It is the only instrument you
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
+
+1. Overall accuracy: the cause is most likely that the model can't reach from this much data. It fell back on the majority label(opinion) for all 30 of the test set examples. This conclusion is supported by the confusion matrix, which shows that every test post was classified by the model as opinion, so accuracy roughly equals the opinion's share of the test set. The baseline did better on the same labels, and the 8/10 score met during the criterion that involved someone else labelling the examples supports that the labels themselves are consistent.
+
+2. Per F1 Score: the cause was probably too few examples for the small labels, plus the fallback on to opinion I stated earlier. The test examples other than opinion had less than 8 test examples, which the notebook did flag. All 3 are at 0.00 at every seed, so the fallback is the bigger factor.
+
+3. Boundary set: The cause is most likely the same fallback the model makes towards classifying examples as opinion, and also the fact that I didn't write rules for that specific boundary. I concluded this from all 6 concert_questions being predicted as opinion on every seed. It's also noticeable in my agreement report that I can apply rules loosley on posts that mix judgement and fact. 
 
 
 
