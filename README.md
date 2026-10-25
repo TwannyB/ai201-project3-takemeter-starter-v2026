@@ -223,6 +223,17 @@ humorous, concert_question, and news_update all had fewer than 8 examples in the
 - *What came back:* ChatGPT recommended categories and gave reasoning. 
 - *What I changed:* I reviewed the classifications and checked them by the definitions we created before implementing them into labels.csv.
 
+**Moment 3**
+
+- *What I asked for:* I asked Claude to help me figure out what change would be best to make to improve the model's performance.
+- *What came back:* Claude pointed out that a model that outputs the majority label often hasn't been trained enough and suggested changes to the epochs and suggested changing the epochs to train the model for longer.
+- *What I changed:* I read its explanation, looked that the evidence that it cited in the confusion matrix and data examples, applied the changes to the epochs, and ran the model.
+
+**Moment 2**
+
+- *What I asked for:* I asked Claude to help me figure out how to test my fifth criterion(boundary posts).
+- *What came back:* Claude implemented a notebook change that outputted boundary_results.json
+- *What I changed:* I made boundary_ten.csv, labelled the examples, and ran the test.
 **Pre-labelling disclosure:**
 No batch was pre-labelled by a model. 13 of 200 posts, the ambiguous ones, were labelled with ChatGPT's help (see Moment 2): it suggested a category and its reasoning, and I checked each one against my label definitions before writing the final label. Those rows are marked AI-assisted label review, checked in the note column. The 20 cold examples were labelled with no AI help.
 
@@ -432,8 +443,9 @@ I often mistook analysis posts for other post classes, mainly because I didn't a
 ## The Improvement
 
 **What I changed:**
-
+I changed the epochs from 3 to 10 to train the model for longer.
 **Which diagnosis pointed at it:**
+The first diagnosis, the overall accuracy pointed to the epochs change. Since it defaulted to opinion for every post, the model likely outputted the majority label without learning anything beyond which was most common(underfitting). Although more data would also help like suggested in the first diagnosis, more epochs was the cheapest way to test and fix undertraining. 
 
 ### Run Log — After
 
@@ -458,12 +470,15 @@ I often mistook analysis posts for other post classes, mainly because I didn't a
 ## What's Still Broken
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
-1. Overall accuracy:
+1. Overall accuracy: 
+The overall accuracy still doesn't match the target I set as part of the first criterion. If I were to continue, I'd add more news_update examples since for all 3 seeds, the 5 news posts went to opinion or concert_question. I stopped because the unit only allows for one change.
 
 
 2. F1 score for humorous and others:
+Although the concert_question F1 score improved a lot, none of the seeds match the target of 0.8. The next step would be to add more humorous and news posts. I stopped here because the unit only allows for one change. 
 
 3. Boundary concert_question/opinion, out of 10
+The boundary criterion didn't improve. The model switched from labeling everything as opinion to labeling anything with a question as a concert_question. The next step would be to write a decision rule for the boundary, then recheck the existing labels against it and add more posts that are opinion but involve a question. I stopped because changing the epochs wouldn't affect the boundary criterion, that would require labelling work and the unit specified that I could only make one change.
 
 
 **The gap between what I meant my labels to capture and what the model
@@ -489,19 +504,19 @@ learned:**
 
      SUBMISSION CHECKLIST — unit 6
 
-       [ ] Baseline vs. Trained table, with your prediction written beforehand
-       [ ] Run Log — Before, five criteria across three seeds
-       [ ] Confusion matrix TYPED AS A MARKDOWN TABLE
-       [ ] A verdict on every criterion
-       [ ] A diagnosis for every miss, using the agreement report as evidence
-       [ ] Agreement Report with every disagreement adjudicated
-       [ ] One improvement, with Run Log — After
-       [ ] What's Still Broken
-       [ ] results_three_seeds_before.json, results_three_seeds_after.json,
+       [X] Baseline vs. Trained table, with your prediction written beforehand
+       [X] Run Log — Before, five criteria across three seeds
+       [X] Confusion matrix TYPED AS A MARKDOWN TABLE
+       [X] A verdict on every criterion
+       [X] A diagnosis for every miss, using the agreement report as evidence
+       [X] Agreement Report with every disagreement adjudicated
+       [X] One improvement, with Run Log — After
+       [X] What's Still Broken
+       [X] results_three_seeds_before.json, results_three_seeds_after.json,
            baseline_results.json and
            agreement_results.json committed
-       [ ] At least four new commits
-       [ ] The SAME repository URL as last unit
+       [X] At least four new commits
+       [X] The SAME repository URL as last unit
 
      Do not delete and recreate this repository.
      ═════════════════════════════════════════════════════════════════════ -->
