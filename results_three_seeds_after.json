@@ -1,0 +1,209 @@
+[
+  {
+    "seed": 42,
+    "n_test": 30,
+    "accuracy": 0.6,
+    "f1_macro": 0.34354838709677415,
+    "per_label": {
+      "opinion": {
+        "precision": 0.7058823529411765,
+        "recall": 0.8571428571428571,
+        "f1": 0.7741935483870968,
+        "support": 14
+      },
+      "humorous": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 4
+      },
+      "concert_question": {
+        "precision": 0.46153846153846156,
+        "recall": 0.8571428571428571,
+        "f1": 0.6,
+        "support": 7
+      },
+      "news_update": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5
+      }
+    },
+    "confusion": {
+      "opinion": {
+        "opinion": 12,
+        "humorous": 0,
+        "concert_question": 2,
+        "news_update": 0
+      },
+      "humorous": {
+        "opinion": 2,
+        "humorous": 0,
+        "concert_question": 2,
+        "news_update": 0
+      },
+      "concert_question": {
+        "opinion": 1,
+        "humorous": 0,
+        "concert_question": 6,
+        "news_update": 0
+      },
+      "news_update": {
+        "opinion": 2,
+        "humorous": 0,
+        "concert_question": 3,
+        "news_update": 0
+      }
+    },
+    "confidence": {
+      "mean_when_right": 0.7675666213035583,
+      "mean_when_wrong": 0.39678430557250977,
+      "accuracy_most_confident_third": 1.0,
+      "accuracy_least_confident_third": 0.2,
+      "n_per_third": 10
+    },
+    "device": "cpu",
+    "device_name": "CPU",
+    "torch_version": "2.14.1+cpu",
+    "max_length": 128
+  },
+  {
+    "seed": 7,
+    "n_test": 30,
+    "accuracy": 0.6666666666666666,
+    "f1_macro": 0.5536257606490872,
+    "per_label": {
+      "opinion": {
+        "precision": 0.7333333333333333,
+        "recall": 0.7857142857142857,
+        "f1": 0.7586206896551724,
+        "support": 14
+      },
+      "humorous": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "support": 4
+      },
+      "concert_question": {
+        "precision": 0.6,
+        "recall": 0.8571428571428571,
+        "f1": 0.7058823529411765,
+        "support": 7
+      },
+      "news_update": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5
+      }
+    },
+    "confusion": {
+      "opinion": {
+        "opinion": 11,
+        "humorous": 1,
+        "concert_question": 2,
+        "news_update": 0
+      },
+      "humorous": {
+        "opinion": 1,
+        "humorous": 3,
+        "concert_question": 0,
+        "news_update": 0
+      },
+      "concert_question": {
+        "opinion": 0,
+        "humorous": 0,
+        "concert_question": 6,
+        "news_update": 1
+      },
+      "news_update": {
+        "opinion": 3,
+        "humorous": 0,
+        "concert_question": 2,
+        "news_update": 0
+      }
+    },
+    "confidence": {
+      "mean_when_right": 0.6305805444717407,
+      "mean_when_wrong": 0.47337770462036133,
+      "accuracy_most_confident_third": 0.8,
+      "accuracy_least_confident_third": 0.4,
+      "n_per_third": 10
+    },
+    "device": "cpu",
+    "device_name": "CPU",
+    "torch_version": "2.14.1+cpu",
+    "max_length": 128
+  },
+  {
+    "seed": 2024,
+    "n_test": 30,
+    "accuracy": 0.6,
+    "f1_macro": 0.4385416666666666,
+    "per_label": {
+      "opinion": {
+        "precision": 0.6111111111111112,
+        "recall": 0.7857142857142857,
+        "f1": 0.6875,
+        "support": 14
+      },
+      "humorous": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "support": 4
+      },
+      "concert_question": {
+        "precision": 0.5454545454545454,
+        "recall": 0.8571428571428571,
+        "f1": 0.6666666666666666,
+        "support": 7
+      },
+      "news_update": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5
+      }
+    },
+    "confusion": {
+      "opinion": {
+        "opinion": 11,
+        "humorous": 0,
+        "concert_question": 3,
+        "news_update": 0
+      },
+      "humorous": {
+        "opinion": 3,
+        "humorous": 1,
+        "concert_question": 0,
+        "news_update": 0
+      },
+      "concert_question": {
+        "opinion": 1,
+        "humorous": 0,
+        "concert_question": 6,
+        "news_update": 0
+      },
+      "news_update": {
+        "opinion": 3,
+        "humorous": 0,
+        "concert_question": 2,
+        "news_update": 0
+      }
+    },
+    "confidence": {
+      "mean_when_right": 0.7089288234710693,
+      "mean_when_wrong": 0.5170096755027771,
+      "accuracy_most_confident_third": 0.8,
+      "accuracy_least_confident_third": 0.3,
+      "n_per_third": 10
+    },
+    "device": "cpu",
+    "device_name": "CPU",
+    "torch_version": "2.14.1+cpu",
+    "max_length": 128
+  }
+]

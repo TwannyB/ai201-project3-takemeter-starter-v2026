@@ -439,16 +439,17 @@ I often mistook analysis posts for other post classes, mainly because I didn't a
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy |≥0.80|0.60|0.67|0.60|MISSED|
+| 2.  F1 score for humorous and others|≥0.60(humorous),≥0.80(others)|0.77(opinion), 0(humorous), 0.60(concert_q), 0(news)|0.76(opinion), 0.75(humorous), 0.71(concert_q), 0(news)|0.69(opinion), 0.40(humorous),0.67(concert_q), 0(news)|MISSED|
+| 3. Largest category not too big|0.70<=|0.46|0.46|0.46|MET|
+| 4. Sample of 10, agree with another person|7|8|8|8|MET|
+| 5. Boundary concert_question/opinion, out of 10|7|4|4|2|MISSED|
 
 **Did it help, and how do I know:**
 
 <!-- If it didn't, say so. Relabelling that didn't help is a genuinely
      interesting result and earns full credit. -->
+     Yes, it did help, because although the same 3 criterion were missed, the accuracy and F1 scores improved, making it closer to achieving 2 of the 3 missed criteria.
 
 
 
@@ -457,7 +458,12 @@ I often mistook analysis posts for other post classes, mainly because I didn't a
 ## What's Still Broken
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
+1. Overall accuracy:
 
+
+2. F1 score for humorous and others:
+
+3. Boundary concert_question/opinion, out of 10
 
 
 **The gap between what I meant my labels to capture and what the model
